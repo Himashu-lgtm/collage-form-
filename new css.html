@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Web for Cimage College</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #a8edea, #fed6e3);
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            color: #222;
+            margin-top: 20px;
+        }
+
+        img {
+            width: 250px;
+            height: auto;
+            margin-top: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+
+        form {
+            background-color: #fff;
+            width: 350px;
+            margin: 30px auto;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.2);
+        }
+
+        label {
+            display: inline-block;
+            width: 120px;
+            text-align: left;
+            font-weight: bold;
+            color: #333;
+        }
+
+        input, select {
+            width: 180px;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            outline: none;
+        }
+
+        input:focus, select:focus {
+            border-color: #0078d7;
+            box-shadow: 0 0 5px rgba(0,120,215,0.5);
+        }
+
+        input[type="submit"] {
+            background-color: #0078d7;
+            color: white;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+            transition: background 0.3s;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #005fa3;
+        }
+
+        h2 {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFWkRdUCj66CU8dv1HKrCiM_yq7gRXmSsfBQ&s"  height="100" width="100"     alt="College Image">
+    <h1>College For Students</h1>
+    <br>
+
+    <form action="/submit.php">
+        <div>
+            <label for="name">Name:</label>
+            <input id="name" type="text" placeholder="Enter Name" required>
+        </div>
+        <br>
+
+        <div>
+            <label for="phone">Phone:</label>
+            <input id="phone" type="tel" placeholder="Enter Phone" required>
+        </div>
+        <br>
+
+        <div>
+            <label for="email">Email:</label>
+            <input id="email" type="email" placeholder="Enter Email" required>
+        </div>
+        <br>
+
+        <div>
+            <label for="dob">Date of Birth:</label>
+            <input id="dob" type="date" required>
+        </div>
+        <br>
+
+        <div>
+            <label for="gender">Gender:</label>
+            <select id="gender" required>
+                <option value="" disabled selected>Select Gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select>
+        </div>
+        <br>
+
+        <div>
+            <input type="submit" value="Submit">
+        </div>
+        <br>
+
+        <h2>Thank You!</h2>
+    </form>
+</body>
+</html>
